@@ -15,7 +15,7 @@
 			</form>
 		</field>
 	</record>
-	<record id="action_all_customers_form" model="ir.action.act_window.view">
+	<record id="action_all_customers_form" model="ir.actions.act_window.view">
 		<field name="act_window_id" ref="action_all_customers" />
 		<field name="view_id" ref="form_all_customers" />
 		<field name="view_mode">form</field>		
