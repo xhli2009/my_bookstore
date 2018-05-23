@@ -10,6 +10,7 @@
 				<group>
 					<field name="name" />
 					<field name="author_ids" widget="many2many_tags" />
+					<field name="private_notes" />
 				</group>
 				<group>
 					<field name="date_release" />
@@ -24,6 +25,7 @@
 			<tree>
 				<field name="name" />
 				<field name="date_release" />
+				<field name="private_notes" />
 			</tree>
 		</field>
 	</record>
