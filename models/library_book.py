@@ -22,6 +22,7 @@ class LibraryBook(models.Model):
 	currency_id = fields.Many2one('res.currency',string='Currency')
 	retail_price = fields.Monetary('Retail Price')
 	publisher_id = fields.Many2one('res.partner',string='Publisher',ondelete='set null',context={},domain=[],)
+	private_notes=fields.Text(groups='base.group_system')
 
 	def name_get(self):
 		result = []
