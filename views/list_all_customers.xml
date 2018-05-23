@@ -4,7 +4,7 @@
 	<menuitem id="menu_custom_toplever" name="My customer menu" />
 	<menuitem id="menu_custom_left" name="This will appear in left bar" parent="menu_custom_toplever" />
 	<menuitem id="menu_all_customs" name="My customer menu" action="action_all_customers" parent="menu_custom_left" sequence="15" groups="" />
-	<reord id="form_all_customers" model="ir.ui.view">
+	<record id="form_all_customers" model="ir.ui.view">
 		<field name="name">All customers</field>
 		<field name="model">res.partner</field>
 		<field name="arch" type="xml">
@@ -14,11 +14,11 @@
 				</group>
 			</form>
 		</field>
-	</reord>
-	<reord id="action_all_customers_form" model="ir.action.act_window.view">
+	</record>
+	<record id="action_all_customers_form" model="ir.action.act_window.view">
 		<field name="act_window_id" ref="action_all_customers" />
 		<field name="view_id" ref="form_all_customers" />
 		<field name="view_mode">form</field>		
 		<field name="sequence">10</field>
-	</reord>	
+	</record>	
 </odoo>
