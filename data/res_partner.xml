@@ -1,0 +1,8 @@
+<odoo>
+	<record id='res_partner_packt' model='res.partner'>
+		<field	name="name">Packt Publishing</field>
+		<field name='city'>Birmingham</field>
+		<field name='country_id' ref='base.uk' />
+		<field name='author_ids' eval="[(6,0,[ref('author_af'),ref('author_dr'),ref('author_hb')])]" />
+	</record>
+</odoo>
